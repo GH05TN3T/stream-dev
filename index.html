@@ -5,6 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>gh05tn3tx - En Vivo</title>
   <style>
+    .logo-container {
+      text-align: center;
+      margin: 1rem 0;
+    }
+    .ghost-logo {
+      max-width: 100px;
+      height: auto;
+      transition: transform 0.3s ease;
+    }
+    .ghost-logo:hover {
+      transform: scale(1.1);
+    }
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
@@ -68,6 +80,9 @@
   </style>
 </head>
 <body>
+  <div class="logo-container">
+    <img src="images/ghost-logo.png" alt="Ghost Logo" class="ghost-logo">
+  </div>
   <div class="avatar"></div>
   <div class="username">@gh05tn3tx</div>
   <div class="status">🎮 ¡Estoy en directo ahora mismo en Twitch!</div>
@@ -79,12 +94,12 @@
   </div>
 
   <iframe class="video"
-    src="https://player.twitch.tv/?channel=gh05tn3tx&parent=cyborgjedi.com"
+    src="https://player.twitch.tv/?channel=gh05tn3tx&parent=YOUR_CF_PAGES_URL"
     allowfullscreen>
   </iframe>
 
   <iframe class="chat"
-    src="https://www.twitch.tv/embed/gh05tn3tx/chat?parent=cyborgjedi.com">
+    src="https://www.twitch.tv/embed/gh05tn3tx/chat?parent=YOUR_CF_PAGES_URL">
   </iframe>
 </body>
 </html>

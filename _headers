@@ -1,0 +1,3 @@
+/*
+  X-Frame-Options: ALLOW-FROM https://player.twitch.tv https://www.twitch.tv
+  Content-Security-Policy: frame-ancestors 'self' https://player.twitch.tv https://www.twitch.tv
