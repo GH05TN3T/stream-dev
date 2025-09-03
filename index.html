@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Estoy en vivo - @tuusuario</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0e0e10;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 1rem;
+    }
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin: 1rem auto;
+      border: 3px solid #9146FF;
+    }
+    .username {
+      font-size: 1.5rem;
+      margin: 0.5rem 0;
+    }
+    .status {
+      font-size: 1.1rem;
+      color: #ccc;
+      margin-bottom: 1rem;
+    }
+    .links a {
+      margin: 0.3rem;
+      padding: 0.5rem 1rem;
+      background: #9146FF;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+    }
+    iframe {
+      width: 100%;
+      max-width: 800px;
+      border: none;
+      margin-top: 1rem;
+    }
+    .chat {
+      height: 400px;
+    }
+    .video {
+      height: 480px;
+    }
+    @media (max-width: 600px) {
+      .chat, .video {
+        height: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <img class="avatar" src="https://placehold.co/120x120?text=Avatar" alt="Avatar">
+  <div class="username">@ghostnet</div>
+  <div class="status">¡Estoy en directo ahora mismo!</div>
+  <div class="links">
+    <a href="https://twitch.tv/gh0stn3t" target="_blank">Ver en Twitch</a>
+    <a href="https://tiktok.com/@gh0stn3t" target="_blank">TikTok</a>
+    <a href="https://youtube.com/@gh0stn3t" target="_blank">YouTube</a>
+  </div>
+
+  <iframe class="video"
+    src="https://player.twitch.tv/?channel=ghostnet&parent=tu-dominio.pages.dev"
+    allowfullscreen>
+  </iframe>
+
+  <iframe class="chat"
+    src="https://www.twitch.tv/embed/tuusuario/chat?parent=tu-dominio.pages.dev">
+  </iframe>
+</body>
+</html>
