@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Estoy en vivo - @tuusuario</title>
+  <title>gh05tn3tx - En Vivo</title>
   <style>
     body {
       margin: 0;
@@ -22,10 +22,13 @@
       border-radius: 50%;
       margin: 1rem auto;
       border: 3px solid #9146FF;
+      background: url('https://placehold.co/120x120?text=G') no-repeat center;
+      background-size: cover;
     }
     .username {
-      font-size: 1.5rem;
+      font-size: 1.8rem;
       margin: 0.5rem 0;
+      color: #9146FF;
     }
     .status {
       font-size: 1.1rem;
@@ -40,6 +43,10 @@
       text-decoration: none;
       border-radius: 5px;
       display: inline-block;
+      transition: background 0.3s ease;
+    }
+    .links a:hover {
+      background: #772ce8;
     }
     iframe {
       width: 100%;
@@ -61,22 +68,23 @@
   </style>
 </head>
 <body>
-  <img class="avatar" src="https://placehold.co/120x120?text=Avatar" alt="Avatar">
-  <div class="username">@ghostnet</div>
-  <div class="status">¡Estoy en directo ahora mismo!</div>
+  <div class="avatar"></div>
+  <div class="username">@gh05tn3tx</div>
+  <div class="status">🎮 ¡Estoy en directo ahora mismo en Twitch!</div>
   <div class="links">
-    <a href="https://twitch.tv/gh0stn3t" target="_blank">Ver en Twitch</a>
-    <a href="https://tiktok.com/@gh0stn3t" target="_blank">TikTok</a>
-    <a href="https://youtube.com/@gh0stn3t" target="_blank">YouTube</a>
+    <a href="https://twitch.tv/gh05tn3tx" target="_blank">Ver en Twitch</a>
+    <!-- Puedes añadir más redes aquí -->
+    <!-- <a href="https://youtube.com/@gh05tn3tx" target="_blank">YouTube</a> -->
+    <!-- <a href="https://tiktok.com/@gh05tn3tx" target="_blank">TikTok</a> -->
   </div>
 
   <iframe class="video"
-    src="https://player.twitch.tv/?channel=ghostnet&parent=tu-dominio.pages.dev"
+    src="https://player.twitch.tv/?channel=gh05tn3tx&parent=cyborgjedi.com"
     allowfullscreen>
   </iframe>
 
   <iframe class="chat"
-    src="https://www.twitch.tv/embed/tuusuario/chat?parent=tu-dominio.pages.dev">
+    src="https://www.twitch.tv/embed/gh05tn3tx/chat?parent=cyborgjedi.com">
   </iframe>
 </body>
 </html>
