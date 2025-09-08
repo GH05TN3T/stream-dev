@@ -5,6 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>gh05tn3tx - En Vivo</title>
   <style>
+    /* 🎨 Fondo dinámico animado */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 1rem;
+      height: 100vh;
+      background: linear-gradient(270deg, #0e0e10, #1a0033, #3b0066, #0e0e10);
+      background-size: 800% 800%;
+      animation: gradientBG 20s ease infinite;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
     .logo-container {
       text-align: center;
       margin: 1rem 0;
@@ -16,17 +38,6 @@
     }
     .ghost-logo:hover {
       transform: scale(1.1);
-    }
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #0e0e10;
-      color: white;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      padding: 1rem;
     }
     .avatar {
       width: 120px;
@@ -41,6 +52,7 @@
       font-size: 1.8rem;
       margin: 0.5rem 0;
       color: #9146FF;
+      text-shadow: 0px 0px 10px rgba(145,70,255,0.7);
     }
     .status {
       font-size: 1.1rem;
@@ -55,16 +67,20 @@
       text-decoration: none;
       border-radius: 5px;
       display: inline-block;
-      transition: background 0.3s ease;
+      transition: background 0.3s ease, transform 0.2s;
+      box-shadow: 0px 0px 10px rgba(145,70,255,0.6);
     }
     .links a:hover {
       background: #772ce8;
+      transform: translateY(-2px);
     }
     iframe {
       width: 100%;
       max-width: 800px;
       border: none;
       margin-top: 1rem;
+      border-radius: 10px;
+      box-shadow: 0px 0px 20px rgba(0,0,0,0.6);
     }
     .chat {
       height: 400px;
@@ -86,9 +102,6 @@
     <div class="status">🎮 ¡Estoy en directo ahora mismo en Twitch!</div>
     <div class="links">
       <a href="https://twitch.tv/gh05tn3tx" target="_blank">Ver en Twitch</a>
-      <!-- Puedes añadir más redes aquí -->
-      <!-- <a href="https://youtube.com/@gh05tn3tx" target="_blank">YouTube</a> -->
-      <!-- <a href="https://tiktok.com/@gh05tn3tx" target="_blank">TikTok</a> -->
     </div>
   </div>
 
